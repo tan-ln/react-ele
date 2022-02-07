@@ -1,0 +1,126 @@
+.order-list_ul {
+  width: 100%;
+  overflow-y: scroll;
+
+  .order-card_item {
+    display: block;
+    margin-top: .266667rem;
+    background-color: #fff;
+    padding: .373333rem 0 0 .4rem;
+
+    .order-item_body {
+      display: flex;
+      flex-direction: row;
+
+      .order-shop_logo {
+        position: relative;
+        padding-right: .266667rem;
+        flex: none;
+        height: .853333rem;
+
+        img {
+          border-radius: .053333rem;
+          border: 1px solid #eee;
+          width: .853333rem;
+          height: .853333rem;
+        }
+      }
+
+      .order-item_content {
+        flex: 1;
+
+        .order_head {
+          border-bottom: 1px solid #eee;
+          padding-right: .346667rem;
+          padding-bottom: .266667rem;
+
+          .title {
+            display: flex;
+            align-items: center;
+            font-size: .426667rem;
+            line-height: 1.5em;
+            color: #333;
+          }
+
+          .datetime {
+            font-size: .293333rem;
+            color: #999;
+          }
+        }
+
+        .order_detail {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          .food_item {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            font-size: .373333rem;
+            padding: .32rem .346667rem .32rem 0;
+            border-bottom: 1px dotted #eee;
+            // transform: scale(0.85);
+            // transform-origin: left top;
+            color: #666;
+
+            img {
+              width: 40px;
+              height: 40px;
+            }
+
+            .food_name {
+              flex: 8;
+              font-size: 18px;
+              margin-left: .213333rem;
+              overflow: hidden;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+            }
+
+            .food_num {
+              flex: 2;
+              font-size: .32rem;
+            }
+
+            .food_price {
+              flex: 3;
+              font-size: 16px;
+              text-align: right;
+
+              span {
+                font-size: .32rem;
+              }
+            }
+          }
+        }
+
+        .totalPrice {
+          font-size: .346667rem;
+          color: #333;
+          font-weight: 700;
+          text-align: right;
+          padding: .346667rem;
+        }
+      }
+    }
+
+    .order-item_bottom {
+      display: flex;
+      justify-content: flex-end;
+      border-top: 1px solid #eee;
+      padding: .266667rem .426667rem;
+      button {
+        outline: none;
+        padding: .133333rem .266667rem;
+        border: 1px solid #2395ff;
+        border-radius: .053333rem;
+        background-color: transparent;
+        font-size: .346667rem;
+        color: #2395ff;
+        margin-left: .2rem;
+      }
+    }
+  }
+}
